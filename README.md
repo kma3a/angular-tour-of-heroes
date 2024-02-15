@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
+This is based on the Angular tutorial [Tour of Heroes application](https://angular.io/tutorial/tour-of-heroes)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -25,3 +27,14 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## learnings
+
+### Section 2: The Hero Editor 
+
+#### Show HeroesComponent
+When adding the new hero component to the component view be sure to import the component into the app.component.ts file. This is not mentioned in the tutorial
+
+#### Format with the UppercasePipe
+The pipe does not work on it's own. When you add the pipe you should import the in this case the CommonModule which contains the UppercasePipe into thee heroes.component.ts.
