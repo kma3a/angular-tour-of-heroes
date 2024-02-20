@@ -34,7 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Section 2: The Hero Editor 
 
 #### Show HeroesComponent
-When adding the new hero component to the component view be sure to import the component into the app.component.ts file. This is not mentioned in the tutorial
+When adding the new hero component to the component view be sure to import the component into the app.component.ts file. After some research found out that I was missing the `--no-standalone` it was mentioned as a note in the first page that I had missed. This is because I am using Angular 17+.
 
 #### Format with the UppercasePipe
-The pipe does not work on it's own. When you add the pipe you should import the in this case the CommonModule which contains the UppercasePipe into thee heroes.component.ts.
+The pipe does not work on it's own. When you add the pipe you should import the in this case the CommonModule which contains the UppercasePipe into the `heroes.component.ts`.
