@@ -43,3 +43,11 @@ The pipe does not work on it's own. When you add the pipe you should import the 
 
 ## Show the HeroDetailComponent
 The component must be imported into the parent component in this case the `heroes.component.ts` file. 
+
+### Section 4: Add services
+
+## Inject the HeroService
+You don't need to import the service the injection is enough.
+
+## Observable
+`subscribe` part of rxjs it can take in next, error, and complete as optional next steps. [Doc](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#subscribe-)
