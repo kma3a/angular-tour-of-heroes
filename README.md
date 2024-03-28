@@ -38,3 +38,8 @@ When adding the new hero component to the component view be sure to import the c
 
 #### Format with the UppercasePipe
 The pipe does not work on it's own. When you add the pipe you should import the in this case the CommonModule which contains the UppercasePipe into the `heroes.component.ts`.
+
+### Section 3: Create a feature component
+
+## Show the HeroDetailComponent
+The component must be imported into the parent component in this case the `heroes.component.ts` file. 
