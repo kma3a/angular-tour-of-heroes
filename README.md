@@ -51,3 +51,20 @@ You don't need to import the service the injection is enough.
 
 ## Observable
 `subscribe` part of rxjs it can take in next, error, and complete as optional next steps. [Doc](https://rxjs-dev.firebaseapp.com/api/index/class/Observable#subscribe-)
+
+### Section 5: Add navigation
+
+## Add the AppRoutingModule
+This portion was not up to date the `--module-app` is not longer needed I found [this issue](https://github.com/angular/angular/issues/53206) that talks about this being for v16 only and not to use after v17.
+
+## Add RouterOutlet
+Found out that the router is already built into Angular v17 so you do not need to update `app-routing.module.ts` instead just update the `app.routes.ts` file.
+
+The code looks like the following:
+```
+import { HeroesComponent } from "./heroes/heroes.component";
+
+export const routes: Routes = [
+    { path: 'heroes', component: HeroesComponent }
+];
+```
