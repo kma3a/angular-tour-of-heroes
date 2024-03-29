@@ -68,3 +68,11 @@ export const routes: Routes = [
     { path: 'heroes', component: HeroesComponent }
 ];
 ```
+
+## Add a navigation using routerLink
+the router is working but RouterModule is not imported into the code. Therefore if you just add the new route to the html it will not show as a link. You must add the RouterModule to the components page.
+
+
+## Add a dashboard view
+The NgFor is only used in standalone components so you need to make the dashboard standalone and import NgFor from the `@angular/common` module.
+
